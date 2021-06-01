@@ -1,0 +1,13 @@
+
+alias sqlplus='rlwrap sqlplus'
+sqlplus hr/bodrul@xepdb1
+
+  
+ 
+connect sys/bodrul@xepdb1 as sysdba
+
+alter session set container = XEPDB1;
+SELECT name, open_mode FROM v$pdbs;
+ALTER PLUGGABLE DATABASE open;
+
+CONN system/bodrul@//localhost:1521/xepdb1
