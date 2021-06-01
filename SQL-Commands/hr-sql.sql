@@ -17,13 +17,13 @@ select first_name, last_name, 12*(salary+500)
 select first_name|| ' '|| last_name "Name",salary 
     from employees where ROWNUM<=3 order by first_name;
     
-   -- and operator 
+-- and operator 
 select first_name, last_name, salary
     from employees
     where lower(first_name)='steven' and last_name = 'Markle';
     
 
-    -- or operator
+-- or operator
 select first_name, last_name, salary
     from employees
     where lower(first_name)='steven' or last_name = 'Markle';
