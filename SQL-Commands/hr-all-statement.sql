@@ -56,3 +56,22 @@ select * from employees
 define sal;
 select * from employees
     where salary > &sal;
+    
+    
+    
+select first_name, salary , hire_date
+    from employees
+    where hire_date < TO_DATE('01-JAN-2004');
+    
+select first_name, salary , hire_date
+    from employees
+    where hire_date > TO_DATE('01-JAN-2004');
+
+select first_name, salary , hire_date , round(((sysdate-hire_date)/365),0) as "Year"
+    from employees ;
+    
+    
+
+
+
+
