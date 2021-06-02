@@ -70,11 +70,14 @@ select first_name, salary , hire_date
 select first_name, salary , hire_date , round(((sysdate-hire_date)/365),0) as "Working YEAR"
     from  employees;
 
-select first_name, salary , hire_date , round(((sysdate-hire_date)/365),0) as "Year>15"
+select first_name, salary , hire_date , round(((sysdate-hire_date)/365),0) as "Year > 15"
     from  employees 
     where round(((sysdate-hire_date)/365),0)>15;
     
-    
+select first_name, to_char(hire_date,'dd/mm/yyyy') "date"
+    from  employees 
+    where hire_date = TO_DATE('17 june 2003');
+        
 
 
 
