@@ -77,6 +77,13 @@ select first_name, salary , hire_date , round(((sysdate-hire_date)/365),0) as "Y
 select first_name, to_char(hire_date,'dd/mm/yyyy') "date"
     from  employees 
     where hire_date = TO_DATE('17 june 2003');
+    
+    
+    -- Single Row Function
+
+
+-- uppperCase
+select * from employee;
         
 
 
