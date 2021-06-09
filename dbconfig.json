@@ -1,1 +1,0 @@
-{"DEV":{"connectString":"localhost/xepdb1","users":[{"user":"hr","password":"bodrul"}]},"TEST":{"connectString":"localhost/xepdb1","users":[{"user":"hr","password":"bodrul"}]},"UAT":{"connectString":"localhost/xepdb1","users":[{"user":"hr","password":"bodrul"}]}}
