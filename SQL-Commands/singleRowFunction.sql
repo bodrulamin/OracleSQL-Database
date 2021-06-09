@@ -1,3 +1,6 @@
+
+
+
 --------------case conversiont---------------------------------
 --upper case
 select upper(last_name) from employees;
