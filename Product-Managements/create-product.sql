@@ -4,7 +4,16 @@ CREATE TABLE PRODUCT(
     id NUMBER(11) PRIMARY KEY,
     PRODUCT_NAME VARCHAR(20),
     price NUMBER(10),
-    cat_id NUMBER(11),
-    
+    cat_id NUMBER(11) 
+);
 
-)
+INSERT INTO PRODUCT(id,PRODUCT_NAME,cat_id,price)
+    VALUES(201,'BB Cream',101,1600);
+
+INSERT INTO PRODUCT(id,PRODUCT_NAME,cat_id,price)
+    VALUES(202,'Lip stick',101,850);
+
+INSERT INTO PRODUCT(id,PRODUCT_NAME,cat_id,price)
+    VALUES(203,'Mashkara',101,550);
+
+
