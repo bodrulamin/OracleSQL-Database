@@ -17,3 +17,6 @@ INSERT INTO PRODUCT(id,PRODUCT_NAME,cat_id,price)
     VALUES(203,'Mashkara',101,550);
 
 
+    
+
+
