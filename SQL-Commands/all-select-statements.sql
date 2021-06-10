@@ -1,7 +1,7 @@
  -- selecting all rows
  select * from employees;
  
- -- selecting collums
+ -- selecting collunms
 select first_name, last_name, salary
     from employees;
     
@@ -28,6 +28,33 @@ select first_name, last_name, salary
     from employees
     where lower(first_name)='steven' or last_name = 'Markle';
 
-DESC employees;
+
+-- between operator
+select last_name , salary
+    from employees
+    where salary
+    between 2500 and 3500;
 
 
+-- in operator
+select employee_id, last_name, salary, manager_id
+    from employees
+    where manager_id in (100,101,201);
+
+-- like operator
+select first_name
+    from employees
+    where first_name like 'S%';
+
+
+-- combining wildcard
+ select last_name
+    from employees
+    where first_name like '_o%';   
+
+-- null operator
+ select last_name, manager_id
+    from employees
+    where manager_id is null; 
+
+    
