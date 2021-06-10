@@ -1,0 +1,20 @@
+DROP TABLE CATAGORY;
+
+CREATE TABLE CATAGORY(
+    id NUMBER(11) PRIMARY KEY,
+    name VARCHAR(20)
+);
+
+
+INSERT INTO CATAGORY(id,name)
+    VALUES(101,'cosmetics');
+INSERT INTO CATAGORY(id,name)
+    VALUES(102,'food-item');
+INSERT INTO CATAGORY(id,name)
+    VALUES(103,'electrnics');
+
+
+
+
+
+
