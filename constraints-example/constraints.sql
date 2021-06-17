@@ -39,3 +39,7 @@ create table PERSON(
 );
 
 INSERT into person values (102,'babu', 'baby@gmail.com', '01725717136',20000);
+
+
+
+
