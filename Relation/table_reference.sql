@@ -17,3 +17,4 @@ create table customer(
     address_id NUMBER(10),
     constraint cust_addr_fk foreign key(address_id) REFERENCES address(id)
 );
+
