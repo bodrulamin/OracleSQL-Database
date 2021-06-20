@@ -1,3 +1,4 @@
+-- comments
 drop table emps;
 
 -- 1. create table
