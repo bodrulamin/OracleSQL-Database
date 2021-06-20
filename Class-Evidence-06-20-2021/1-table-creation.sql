@@ -10,14 +10,7 @@ create table emps(
     hire_date date,
     ADDRESS VARCHAR2(16)
 );
-
-
-create sequence idseq
-    start with 1
-    INCREMENT by 1
-    NOCACHE
-    NOCYCLE;
-
+ 
 
 -- 2. insert 5 valuesw
 insert into emps(eid,ename,salary,hire_date,ADDRESS) 
@@ -38,7 +31,8 @@ insert into emps(eid,ename,salary,hire_date,ADDRESS)
     values (idseq.NEXTVAL,'&ename',&salary, to_date('&date','dd-mm-yyyy') ,'&address');
 
 --3.  add primary key to eid
-alter table emps add constraint pk Primary Key(eid);
+alter table emps add constraint eid_pk Primary Key(eid);
+
 select * from emps;
 
 
@@ -50,7 +44,6 @@ alter TABLE emps add (
 
 -- 5 query name salary
 select ename, job_title, salary, SALARY*1.3 "SAL+30%" from emps;
-select ename, salary, SALARY + (salary*30)/100 "SAL+30%" from emps;
  
 
 
@@ -75,7 +68,7 @@ create sequence idseq
     NOCYCLE;
 
 
--- create index
+--10.  create index
 create index name_i
     on emps(ename);
 
