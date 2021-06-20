@@ -5,13 +5,10 @@ select table_name from user_tables;
 drop table employees;
 
 create table employees(
-
     ID NUMBER(10) primary key,
     Name VARCHAR2(16),
     email VARCHAR2(20),
     salary NUMBER(10)
-
-
 );
 
 
@@ -41,3 +38,5 @@ create sequence deptsec
     NOCYCLE;
 
 select deptsec.nextval from dual;
+
+-- view creation, sequence creation, 
