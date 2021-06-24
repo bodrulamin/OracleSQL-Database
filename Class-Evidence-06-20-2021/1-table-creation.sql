@@ -71,6 +71,14 @@ create sequence idseq
 create index name_i
     on emps(ename);
 
+select count(*) from (
+    select EMPLOYEE_ID, JOB_ID
+    from employees
+UNION ALL
+select EMPLOYEE_ID,JOB_ID
+    from JOB_HISTORY
+    );
+
 
 
 
